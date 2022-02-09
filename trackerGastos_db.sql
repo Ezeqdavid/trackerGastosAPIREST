@@ -1,10 +1,5 @@
 drop database trackerGastosDb;
 drop user trackerGastos;
-create user trackerGastos with password "password";
-create database trackerGastos with template=template0 owner=trackerGastos;
-\connect trackerGastosDb;
-alter default privileges grant all on tables to trackerGastos;
-alter default privileges grant all on sequences to trackerGastos;
 
 create table tg_users(
 user_id integer primary key not null,
